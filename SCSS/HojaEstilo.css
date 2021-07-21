@@ -1,0 +1,327 @@
+@charset "UTF-8";
+.flip-horizontal-top {
+  animation: flip-horizontal-top 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation-duration: 3s;
+}
+
+@keyframes flip-horizontal-top {
+  0% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(180deg);
+    color: black;
+    font-size: 40px;
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+
+/*Fondos*/
+.fondoNegro {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.backgroundGradient {
+  width: 100%;
+  height: 100vh;
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+}
+
+.albumFondo {
+  background-image: url(https://www.chismestoday.com/wp-content/uploads/2020/12/image-7.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin: 0px;
+}
+
+.margins {
+  margin: 30px;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.izquierda {
+  text-align: left;
+}
+
+.justificado {
+  text-align: justify;
+}
+
+.titulos {
+  color: #F7F4F4;
+  font-size: 26px;
+  text-align: center;
+  margin: 0px;
+}
+
+.titulos__MarginBot {
+  margin: 0px 0px 5vh 0px;
+}
+
+.subtitulos {
+  font-size: 26px;
+  color: #FFC597;
+}
+
+p.TextoBasico {
+  color: white;
+  font-size: 16px;
+}
+
+.textoBlanco {
+  font-size: 1em;
+  color: white;
+}
+
+.centradoSeccion {
+  margin: 0 auto;
+}
+
+.centradoSeccion section {
+  width: 50%;
+}
+
+.centradoSeccion div {
+  width: 100%;
+}
+
+.tamañoImagen {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+/* felxbox en pagina de recomendaciones*/
+.flexed {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 70vh;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: stretch;
+}
+
+.flexImagen {
+  width: 20%;
+  height: auto;
+}
+
+/* Uso de BEM 1*/
+.flexImagen--noOverflow {
+  overflow: hidden;
+}
+
+.tamanoAlbum {
+  width: 100%;
+  height: auto;
+}
+
+.flexVideo {
+  flex-basis: auto;
+}
+
+.flexTexto {
+  width: 20%;
+}
+
+.flexPublicidad {
+  width: 15%;
+}
+
+.flexPublicidad__Imagen {
+  width: 100%;
+}
+
+.flexPublicidad__Texto {
+  color: white;
+  font-size: 16px;
+}
+
+.imagenPublicidad {
+  width: 100%;
+}
+
+/*NAV con flexboc*/
+/*
+.headerContainer{
+    background-color: #10286b;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .miLogo{
+    width: auto;
+    height: 35px;
+    padding: 3px;
+  }
+  
+  .menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .menu li a{
+    text-decoration: none;
+    color: rgb(155, 101, 101);
+    font-family: 'Rubik', sans-serif;
+    margin-right: 6px;
+    font-size: 60%;
+    transition: 1s;
+  }
+
+  @media screen and (min-width: 600px) {
+    .menu li a{
+            text-decoration: none;
+            color: #fff;
+            margin-right: 20px;
+            font-size: 100%;
+          }
+}
+
+  .menu li a:hover{
+    color: gray;
+  }
+  
+  /*Indicamos que cuando se posicione sobre un elemento li, si contiene un elemento con una clase .submenu, se aplicará el display: block*/
+/*
+  .menu li:hover>.submenu{
+    display: block;
+  }
+  
+  /**Damos estilos al submenu y lo ocultamos con display none**/
+/*
+  .submenu{
+    list-style: none;
+    display: none;
+    background-color: #10286b;
+    position: fixed;
+    display: none;
+  }
+  
+  .submenu li{
+    margin: 6px 0;
+    padding: 0 15px;
+  }
+  
+  .submenu li a:hover{
+    border-bottom: 1px solid #fff;
+  }
+  */
+/* Grid aplicado a pagina de recomendaciones anteriores */
+/*
+  .grilla {
+    display: grid;
+    grid-template-columns: 35% 35% 20%;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    row-gap: 2vh;
+    column-gap: 2%;
+    grid-template-areas: 
+    "discoUno discoDos aside"
+    "discoTres discoCuatro aside"
+    "footer footer footer";
+  }
+      
+      footer {
+          grid-area: footer;
+      }
+      
+      #discoUno section {
+          grid-area: discoUno;
+      }
+      
+      #discoDos section {
+          grid-area: discoDos;
+      }
+
+      #discoTres section {
+          grid-area: discoTres;
+      }
+
+      #discoCuatro section {
+          grid-area: discoCuatro;
+      }
+      
+      aside {
+          grid-area: aside;
+      }
+      */
+.NoPadding {
+  padding: 0px;
+}
+
+.margins {
+  margin: 5%;
+}
+
+.NoStrech {
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .NoStrech {
+    grid-gap: 10px;
+  }
+  .ResponsiveDisplayNone {
+    display: none;
+  }
+}
+
+/* Uso de BEM 4*/
+.subtitulos2 {
+  font-size: 1.5em;
+  font-family: Verdana, sans-serif;
+  color: beige;
+}
+
+.subtitulos2--centrado {
+  text-align: center;
+}
+
+.espacioFooter {
+  height: 10vh;
+  align-items: flex-end;
+}
+
+.footer {
+  background-color: blue;
+}
+
+.footer__texto {
+  color: white;
+}
+
+.footer__texto--tipografia {
+  font-family: serif;
+}
+
+.footer2 {
+  display: flex;
+  height: 10vh;
+}
+
+.footer2__texto {
+  align-self: flex-end;
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer2__texto--negro {
+  color: black !important;
+}
+/*# sourceMappingURL=HojaEstilo.css.map */
