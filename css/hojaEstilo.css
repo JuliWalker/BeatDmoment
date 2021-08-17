@@ -1,104 +1,109 @@
 @charset "UTF-8";
-.flip-horizontal-top {
-  animation: flip-horizontal-top 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-  animation-duration: 3s;
-}
+/* pagina de ciudades */
+.marginBot {
+  margin-bottom: 15vh; }
 
-@keyframes flip-horizontal-top {
-  0% {
-    transform: rotateX(0);
-  }
-  50% {
-    transform: rotateX(180deg);
-    color: black;
-    font-size: 40px;
-  }
-  100% {
-    transform: rotateX(0);
-  }
-}
-
-/*Fondos*/
 .fondoNegro {
   background-color: black;
   width: 100%;
-  height: 100%;
-}
-
-.backgroundGradient {
-  width: 100%;
-  height: 100vh;
-  background: #3f5efb;
-  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
-}
-
-.albumFondo {
-  background-image: url(https://www.chismestoday.com/wp-content/uploads/2020/12/image-7.jpg);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  margin: 0px;
-}
-
-.margins {
-  margin: 30px;
-}
-
-.centrar {
-  text-align: center;
-}
-
-.izquierda {
-  text-align: left;
-}
-
-.justificado {
-  text-align: justify;
-}
+  height: 100%; }
 
 .titulos {
   color: #F7F4F4;
   font-size: 26px;
   text-align: center;
-  margin: 0px;
-}
+  padding: 0px 0px 10vh 0px; }
+
+/* pagina de ciudades */
+/* pagina de ciudades */
+.backgroundGradient {
+  width: 100%;
+  height: auto;
+  background: #3f5efb;
+  background: linear-gradient(180deg, #3f5efb 0%, black 100%); }
+
+.titulos {
+  color: #F7F4F4;
+  font-size: 26px;
+  text-align: center;
+  padding: 0px 0px 10vh 0px; }
 
 .titulos__MarginBot {
-  margin: 0px 0px 5vh 0px;
-}
+  margin: 0px 0px 2vh 0px; }
+
+/* pagina de ciudades */
+/* pagina de recomendaciones */
+.paddingbottom {
+  padding: 0px 0px 8vh 0px; }
+
+.fondoNegro {
+  background-color: black;
+  width: 100%;
+  height: 100%; }
+
+.NoPadding {
+  padding: 0px; }
+
+.margins {
+  margin: 5%; }
+
+.NoStrech {
+  align-items: flex-start;
+  justify-content: space-around; }
+
+@media screen and (max-width: 768px) {
+  .NoStrech {
+    grid-gap: 10px; }
+  .ResponsiveDisplayNone {
+    display: none; } }
+
+/* pagina de recomendaciones */
+/* Index */
+.albumFondo {
+  background-image: url(https://www.chismestoday.com/wp-content/uploads/2020/12/image-7.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin: 0px; }
+
+.titulos {
+  color: #F7F4F4;
+  font-size: 26px;
+  text-align: center;
+  padding: 0px 0px 10vh 0px; }
 
 .subtitulos {
   font-size: 26px;
-  color: #FFC597;
-}
+  color: #FFC597; }
 
-p.TextoBasico {
-  color: white;
-  font-size: 16px;
-}
+/* Index */
+/* NavBar */
+.backgroundNav {
+  background-color: #100936; }
 
-.textoBlanco {
-  font-size: 1em;
-  color: white;
-}
+/* NavBar */
+/* Footer */
+.backgroundFooter1 {
+  background-color: #121472; }
 
+.backgroundFooter2 {
+  background-color: #100936; }
+
+.letrasBlancas {
+  color: #a3f1ff; }
+
+/* Footer */
 .centradoSeccion {
-  margin: 0 auto;
-}
-
-.centradoSeccion section {
-  width: 50%;
-}
-
-.centradoSeccion div {
-  width: 100%;
-}
+  margin: 0 auto; }
+  .centradoSeccion section {
+    width: 50%; }
+  .centradoSeccion div {
+    width: 100%; }
 
 .tamañoImagen {
   width: 100%;
   height: auto;
-  margin: 10px;
-}
+  margin: 10px; }
 
 /* felxbox en pagina de recomendaciones*/
 .flexed {
@@ -108,50 +113,40 @@ p.TextoBasico {
   height: 70vh;
   justify-content: space-evenly;
   align-items: center;
-  align-content: stretch;
-}
+  align-content: stretch; }
 
 .flexImagen {
   width: 20%;
-  height: auto;
-}
+  height: auto; }
 
 /* Uso de BEM 1*/
 .flexImagen--noOverflow {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .tamanoAlbum {
   width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 .flexVideo {
-  flex-basis: auto;
-}
+  flex-basis: auto; }
 
 .flexTexto {
-  width: 20%;
-}
+  width: 20%; }
 
 .flexPublicidad {
-  width: 15%;
-}
+  width: 15%; }
 
 .flexPublicidad__Imagen {
-  width: 100%;
-}
+  width: 100%; }
 
 .flexPublicidad__Texto {
   color: white;
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 .imagenPublicidad {
-  width: 100%;
-}
+  width: 100%; }
 
-/*NAV con flexboc*/
+/*NAV con flexbox - esta fue una prueba de hacer el nav-bar con flex-box, luego me parecio más conveniente usar Boostrap por ser más facil de hacer responsive*/
 /*
 .headerContainer{
     background-color: #10286b;
@@ -219,7 +214,7 @@ p.TextoBasico {
     border-bottom: 1px solid #fff;
   }
   */
-/* Grid aplicado a pagina de recomendaciones anteriores */
+/* Grid aplicado a pagina de recomendaciones anteriores - luego migre la pagina a Boostrap pero dejo el formato de grilla como ejemplo */
 /*
   .grilla {
     display: grid;
@@ -258,70 +253,46 @@ p.TextoBasico {
           grid-area: aside;
       }
       */
-.NoPadding {
-  padding: 0px;
-}
-
-.margins {
-  margin: 5%;
-}
-
-.NoStrech {
-  align-items: flex-start;
-  justify-content: space-around;
-}
-
-@media screen and (max-width: 768px) {
-  .NoStrech {
-    grid-gap: 10px;
-  }
-  .ResponsiveDisplayNone {
-    display: none;
-  }
-}
-
 /* Uso de BEM 4*/
 .subtitulos2 {
   font-size: 1.5em;
   font-family: Verdana, sans-serif;
-  color: beige;
-}
+  color: beige; }
 
 .subtitulos2--centrado {
-  text-align: center;
-}
+  text-align: center; }
 
 .espacioFooter {
   height: 10vh;
-  align-items: flex-end;
-}
+  align-items: flex-end; }
 
 .footer {
-  background-color: blue;
-}
+  background-color: #00aeff; }
 
 .footer__texto {
-  color: white;
-}
+  color: white; }
 
 .footer__texto--tipografia {
-  font-family: serif;
-}
+  font-family: serif; }
 
 .footer2 {
   display: flex;
-  height: 10vh;
-}
+  height: 10vh; }
 
 .footer2__texto {
   align-self: flex-end;
   color: white;
   font-size: 12px;
   width: 100%;
-  text-align: center;
-}
+  text-align: center; }
 
 .footer2__texto--negro {
-  color: black !important;
-}
-/*# sourceMappingURL=HojaEstilo.css.map */
+  color: black !important; }
+
+.reactive {
+  width: auto; }
+
+@media screen and (mix-width: 768px) {
+  .reactive {
+    width: 560px;
+    height: 315px; } }

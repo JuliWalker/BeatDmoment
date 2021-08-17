@@ -2,72 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sugerencias musicales para distintos momentos">
-    <meta name="keywords" content="Musica,momentos,indie,rock,discos,album,BeatDmoment,Beat,moment">
-    <meta name="robots" content="noindex, nofollow, - son instrucciones para que los robots de los buscadores no sigan nuestra pagina, sirve
-    para paginas que queremos ocultar">
-    <title>Beat the moment - Momentos musicales</title>
-    <link rel="stylesheet" href="CSS/Normalizador.css">
-    <link rel="stylesheet" href="Boostrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="SCSS/HojaEstilo.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sugerencias musicales para distintos momentos">
+  <meta name="keywords" content="Musica,momentos,indie,rock,discos,album,BeatDmoment,Beat,moment">
+  <title>Beat the moment - Momentos musicales</title>
+  <link rel="stylesheet" href="Boostrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/hojaEstilo.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Beat The Moment</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="RecomendacionSemanal.html">Recomendacion Semanal</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Momentos anteriores
-                    </a>
-                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item textoBlanco" href="recomendacionesAnteriores2.html">Imagenes</a></li>
-                      <li><a class="dropdown-item textoBlanco" href="recomendacionesAnteriores.html">Tabla de recom.</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="DejanosTuComentario.html">Dejanos tu momento</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-
-    <div class="albumFondo">
-        <div class="titulos">
-            <h1>
-                Beat the moment
-            </h1>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark backgroundNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Beat The Moment</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Discos y momentos
+              </a>
+              <ul class="dropdown-menu backgroundNav" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item text-white" href="recomendacionesAnteriores2.html">Recomendaciones para
+                    momentos</a></li>
+                <li><a class="dropdown-item text-white" href="recomendacioneCiudades.html">Recomendaciones por
+                    ciudad</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dejanosTuComentario.html">Dejanos tu momento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">Sobre Nosotros</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
 
-        <h2 class="centrar subtitulos">Desde beat the momento queremos acompañar con el disco perfecto ese momento
-            que deseas
-        </h2>
+  <div class="albumFondo">
+    <div class="titulos pt-5">
+      <h1>
+        Beat the moment
+      </h1>
     </div>
 
-<!-- Uso de BEM 3 -->
+    <h2 class="text-center subtitulos">Desde beat the momento queremos acompañar con el disco perfecto ese momento
+      que deseas
+    </h2>
+  </div>
 
-    <footer class="footer">
-        <p class="footer__texto footer__texto--tipografia text-center"> Dejanos tu momento y te recomendamos un disco para vivirlo o recordarlo. </p>
-        <p>pruebas de branch</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="backgroundFooter1 letrasBlancas">
 
-    <script src="Boostrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Section: Links  -->
+    <section class="pt-4">
+      <div class="container text-center text-md-start">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="fw-bold mb-4">
+              BeatDmoment® 2021
+            </h6>
+            <p>
+              BeatDmoment es una pagina donde podras encontrar recomendaciones musicales para tus viajes y los distintos
+              momentos de tu día
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links
+            </h6>
+            <p>
+              <a href="recomendacionesAnteriores2.html" class="text-reset">Momentos</a>
+            </p>
+            <p>
+              <a href="recomendacioneCiudades.html" class="text-reset">Ciudades</a>
+            </p>
+            <p>
+              <a href="DejanosTuComentario.html" class="text-reset">Comentarios</a>
+            </p>
+            <p>
+              <a href="aboutUs.html" class="text-reset">Nosotros</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Social Media
+            </h6>
+            <p>
+              <a href="https://www.facebook.com/" class="text-reset" target="_blank">Facebook</a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/" class="text-reset" target="_blank">Instagram</a>
+            </p>
+            <p>
+              <a href="https://www.youtube.com/" class="text-reset" target="_blank">Youtube</a>
+            </p>
+            <p>
+              <a href="https://web.whatsapp.com/" class="text-reset" target="_blank">WhatsApp</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="me-3"></i> Buenos Aires, Argentina</p>
+            <p>
+              <i class="me-3"></i>
+              julian13@hotmail.com
+            </p>
+            <p><i class="me-3"></i> Julián Walker</p>
+            <p><i class="me-3"></i> + 54 11 2621 5899</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 backgroundFooter2">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://juliwalker.github.io/BeatDmoment/">JWalker&CO</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="Boostrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

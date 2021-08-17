@@ -6,18 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sugerencias musicales para distintos momentos">
-  <meta name="keywords" content="Musica,momentos,indie,rock,discos,album">
-  <title>Recomendaciones anteriores tabla</title>
-  <link rel="stylesheet" href="CSS/Normalizador.css">
+  <meta name="keywords" content="Musica,momentos,indie,rock,discos,album,BeatDmoment,Beat,moment">
+  <title>Discos para momentos</title>
   <link rel="stylesheet" href="Boostrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="SCSS/HojaEstilo.min.css">
+  <link rel="stylesheet" href="css/hojaEstilo.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 
+
 <body class="fondoNegro">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark backgroundNav">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Beat The Moment</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -26,29 +26,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="RecomendacionSemanal.html">Recomendacion Semanal</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                Momentos anteriores
+                Discos y momentos
               </a>
-              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item textoBlanco" href="recomendacionesAnteriores2.html">Imagenes</a></li>
-                <li><a class="dropdown-item textoBlanco" href="recomendacionesAnteriores.html">Tabla de recom.</a></li>
+              <ul class="dropdown-menu backgroundNav" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item text-white" href="recomendacionesAnteriores2.html">Recomendaciones para
+                    momentos</a></li>
+                <li><a class="dropdown-item text-white" href="recomendacioneCiudades.html">Recomendaciones por
+                    ciudad</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="DejanosTuComentario.html">Dejanos tu momento</a>
+              <a class="nav-link" href="dejanosTuComentario.html">Dejanos tu momento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">Sobre Nosotros</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div aria-label="breadcrumb">
+    <div aria-label="breadcrumb" class="ps-3">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="ndex.html">Inicio</a></li>
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
         <li class="breadcrumb-item active" aria-current="page">Recomendaciones anteriores</li>
       </ol>
     </div>
@@ -56,129 +58,248 @@
 
   <div class="titulos">
     <h1>
-      Beat the moment
+      Discos para tus momentos
     </h1>
   </div>
 
-  <section class="container-fluid NoPadding">
+  <!--  Recomendaciones de discos para andar en bici -->
+  <section class="container-xl pb-5 px-5 px-lg-0">
     <div class="row NoStrech NoPadding">
-      <div id="carouselExampleCaptions" class="carousel slide col-12 col-md-4" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+      <div class="col-12 col-md-8 NoPadding">
+        <div class="container-fluid NoPadding">
+          <div class="row paddingbottom">
+            <div class="col-12 col-md-6 text-white pt-3">
+              <h2>
+                Hecha un vistazo a nuestras recomendaciones musicales para andar en bici
+              </h2>
+              <p>
+                En este caso recomendamos algunos discos animados para que tus viajes en bici sean alegres y te sobre
+                energia para llegar
+                a tu destino!
+              </p>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide col-12 col-md-6" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_998733-MLA43258947673_082020-O.jpg" class="d-block w-100"
+                    alt="Shakira-Donde-estan-los-ladrones">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Sofi Tukker - Treehouse</h5>
+                    <p>Este disco de electronica en portugues te dara la energia para llegar volando a tu destino</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.genius.com/0fab3db2a7d98ab794baf0ebccd021cb.1000x1000x1.jpg"
+                    class="d-block w-100" alt="Polo&Pan">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Polo & Pan Caravelle</h5>
+                    <p>Para disfrutar del viaje</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://img.discogs.com/Z1gMENvmQcn-Xg8lAAXAEf57jWk=/fit-in/600x600/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-11258046-1517046417-4022.jpeg.jpg"
+                    class="d-block w-100" alt="Skiptacing">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Gramatik - Coffee shop</h5>
+                    <p>Otro disco recomendado para pedalean</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/09/29131153/Shakira-Donde-estan-los-ladrones.jpg"
-              class="d-block w-100" alt="Shakira-Donde-estan-los-ladrones">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Shakira: Donde estan los ladrones?</h5>
-              <p>Aqui nuestro disco recomendado para cantar bajo la ducha</p>
+
+
+        <!--  Recomendaciones de discos para desayunar un domingo por la mañana -->
+        <div class="container-fluid NoPadding">
+          <div class="row NoPadding">
+            <div class="col-12 col-md-6 text-white pt-3">
+              <h2>
+                Hecha un vistazo a nuestras recomendaciones musicales para domingos por la mañana
+              </h2>
+              <p>
+                En este caso recomendamos algunos discos suaves para acompañarte en tus desayunos de domingo
+              </p>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.genius.com/0fab3db2a7d98ab794baf0ebccd021cb.1000x1000x1.jpg" class="d-block w-100"
-              alt="Polo&Pan">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Polo & Pan Caravelle</h5>
-              <p>Recomendamos este disco especialmente para andar con tu bici!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/71ZjCS-qwoL._SL1200_.jpg" class="d-block w-100"
-              alt="Skiptacing">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Skiptacing</h5>
-              <p>Musica para trabajar en casa</p>
+            <div id="carouselExampleCaptions2" class="carousel slide col-12 col-md-6" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://www.efeeme.com/wp-content/uploads/2020/09/parcels-live-vol-1-16-09-20.jpg"
+                    class="d-block w-100" alt="Shakira-Donde-estan-los-ladrones">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Parcels: Live Vol 1</h5>
+                    <p>Un hermoso disco para arrancar el domingo con energias</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://img.discogs.com/WrIcF3mhztGN6ABk9WMI6voFf10=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-10052043-1607937432-5878.mpo.jpg"
+                    class="d-block w-100" alt="French Kiwi Juice">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>FKJ - French Kiwi Juice</h5>
+                    <p>Un disco hermoso para escuchar relajado desde el sillon</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/71ZjCS-qwoL._SL1200_.jpg"
+                    class="d-block w-100" alt="Skiptacing">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Skiptacing</h5>
+                    <p>Para esos domingos tranquilos</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
-      <div id="carouselExampleCaptions2" class="carousel slide col-12 col-md-4" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/09/29131153/Shakira-Donde-estan-los-ladrones.jpg"
-              class="d-block w-100" alt="Shakira-Donde-estan-los-ladrones">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Shakira: Donde estan los ladrones?</h5>
-              <p>Aqui nuestro disco recomendado para cantar bajo la ducha</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.genius.com/0fab3db2a7d98ab794baf0ebccd021cb.1000x1000x1.jpg" class="d-block w-100"
-              alt="Polo&Pan">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Polo & Pan Caravelle</h5>
-              <p>Recomendamos este disco especialmente para andar con tu bici!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/71ZjCS-qwoL._SL1200_.jpg" class="d-block w-100"
-              alt="Skiptacing">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Skiptacing</h5>
-              <p>Musica para trabajar en casa</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+<!--  Publicidad del sitio-->
 
       <aside class="col-3 col-lg-2 ResponsiveDisplayNone">
         <img class="img-fluid img-thumbnail"
           src="https://conceptodefinicion.de/wp-content/uploads/2020/07/publicidad-1.jpg" alt="publicidad-1">
-        <p class="TextoBasico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum</p>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Perspiciatis</p>
         <img class="img-fluid img-thumbnail"
           src="https://merkataritzairekiabizkaian.eus/wp-content/uploads/2018/08/publi-face-insta-inicio.jpg"
           alt="publicidad-2">
-        <p class="TextoBasico">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. t consectetur adipisicing elit.
+        </p>
       </aside>
 
     </div>
   </section>
 
-  <div class="container espacioFooter">
-    <footer class="row espacioFooter">
-      <p class="textoBlanco centrar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, vitae illum fuga
-        saepe laboriosam quo
-        voluptatum. Quas nihil ut animi
-      </p>
-    </footer>
-  </div>
+  <!-- Footer -->
+  <footer class="backgroundFooter1 letrasBlancas">
+
+    <!-- Section: Links  -->
+    <section class="pt-4">
+      <div class="container text-center text-md-start">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="fw-bold mb-4">
+              BeatDmoment® 2021
+            </h6>
+            <p>
+              BeatDmoment es una pagina donde podras encontrar recomendaciones musicales para tus viajes y los distintos
+              momentos de tu día
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links
+            </h6>
+            <p>
+              <a href="recomendacionesAnteriores2.html" class="text-reset">Momentos</a>
+            </p>
+            <p>
+              <a href="recomendacioneCiudades.html" class="text-reset">Ciudades</a>
+            </p>
+            <p>
+              <a href="DejanosTuComentario.html" class="text-reset">Comentarios</a>
+            </p>
+            <p>
+              <a href="aboutUs.html" class="text-reset">Nosotros</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Social Media
+            </h6>
+            <p>
+              <a href="https://www.facebook.com/" class="text-reset" target="_blank">Facebook</a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/" class="text-reset" target="_blank">Instagram</a>
+            </p>
+            <p>
+              <a href="https://www.youtube.com/" class="text-reset" target="_blank">Youtube</a>
+            </p>
+            <p>
+              <a href="https://web.whatsapp.com/" class="text-reset" target="_blank">WhatsApp</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="me-3"></i> Buenos Aires, Argentina</p>
+            <p>
+              <i class="me-3"></i>
+              julian13@hotmail.com
+            </p>
+            <p><i class="me-3"></i> Julián Walker</p>
+            <p><i class="me-3"></i> + 54 11 2621 5899</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 backgroundFooter2">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://juliwalker.github.io/BeatDmoment/">JWalker&CO</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
   <script src="Boostrap/js/bootstrap.bundle.min.js"></script>
 

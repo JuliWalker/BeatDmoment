@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sugerencias musicales para distintos momentos">
   <meta name="keywords" content="Musica,momentos,indie,rock,discos,album,BeatDmoment,Beat,moment">
-  <title>Dejanos tu comentario</title>
+  <title>Discos para viajar</title>
   <link rel="stylesheet" href="Boostrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/hojaEstilo.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="fondoNegro">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark backgroundNav">
       <div class="container-fluid">
@@ -47,79 +47,114 @@
         </div>
       </div>
     </nav>
-  </header>
-
-  <div class="backgroundGradient">
-
     <div aria-label="breadcrumb" class="ps-3">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a class="text-white" href="index.html">Inicio</a></li>
-        <li class="breadcrumb-item active text-white" aria-current="page">Dejanos tu momento</li>
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Recomendaciones por ciudades</li>
       </ol>
     </div>
+  </header>
 
-    <div class="titulos">
-      <h1 class="titulos__MarginBot">
-        Beat the moment
-      </h1>
-    </div>
-
-    <section class="container-md text-white pb-5">
-      <form class="row g-3 margins">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="Momento" class="form-label">Tu momento</label>
-          <input type="text" class="form-control" id="Momento">
-        </div>
-        <div class="col-12">
-          <label for="ComentariosAdicionales" class="form-label">Dejanos todos los comentarios que quieras sobre el
-            momento o el disco que esperás!</label>
-          <textarea class="form-control" id="ComentariosAdiciones" rows="3"></textarea>
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">¿Dónde vivís?</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="TipoDeMusica" class="form-label">¿Qué tipo de musica te gusta?</label>
-          <select id="TipoDeMusica" class="form-select">
-            <option selected>
-              <div class=""></div>...
-            </option>
-            <option>Indie</option>
-            <option>Rock</option>
-            <option>Pop</option>
-            <option>Rap</option>
-            <option>Metal</option>
-            <option>Otros</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="Otro" class="form-label">Otro...</label>
-          <input type="text" class="form-control" id="Otro">
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Quiero que memanden mails con novedades sobre las nuevas recomendaciones
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
-    </section>
-
-
+  <div class="titulos">
+    <h1>
+      Nuestras recomendaciones de ciudades
+    </h1>
   </div>
 
+  <!-- Nueva York -->
+  <section class="container-md marginBot">
+
+    <!-- Imagen principal New York -->
+    <div class="row mb-4">
+      <div class="card bg-dark text-white">
+        <img src="Fotos/nuevayork.jpg" class="card-img" alt="nueva york">
+        <div class="card-img-overlay">
+          <h2 class="card-title text-center pt-3">New York</h2>
+          <h4 class="card-text text-center">Te recomendamos algunos discos para que puedas disfrutar caminando por las
+            calles de New York</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discos New York -->
+    <div class="row">
+      <div class="card-group">
+        <div class="card">
+          <img src="https://i.pinimg.com/originals/48/44/dd/4844ddcce1521e59ab7eacca45d8c2c9.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ella and Louis Album</h5>
+            <p class="card-text">Un hermoso album para emocionarse con estos dos grandes artistas del jazz</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.ytimg.com/vi/kgRcCyey1hM/maxresdefault.jpg" class="card-img-top"
+            alt="Miles Davis Kind of blue">
+          <div class="card-body">
+            <h5 class="card-title">Miles Davis Kind of Blue</h5>
+            <p class="card-text">Te recomendamos este hermoso disco para ambientar tus caminatas por la ciudad</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.ytimg.com/vi/RBaHMhilRaE/maxresdefault.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Duke Ellington In Newport</h5>
+            <p class="card-text">Un poco más de musica para ambientar tus caminatas por los parques o museos de la
+              ciudad</p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+
+  <!-- Paris -->
+  <section class="container-md my-5">
+
+    <!-- Imagen principal Paris -->
+    <div class="row mb-4">
+      <div class="card bg-dark text-white">
+        <img src="Fotos/Paris.jpg" class="card-img" alt="Paris">
+        <div class="card-img-overlay">
+          <h2 class="card-title text-center pt-3">Paris</h2>
+          <h4 class="card-text text-center">Te recomendamos algunos discos para que puedas disfrutar caminando por las
+            calles de Paris</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discos Paris -->
+    <div class="row">
+      <div class="card-group">
+        <div class="card">
+          <img src="https://i.ytimg.com/vi/gB98kRDUTM4/maxresdefault.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Polo & Pan Couer Croise</h5>
+            <p class="card-text">Un disco super alegre y hermoso para estar tirado en los hermosos parques de Paris</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://suenaspe.com/wp-content/uploads/2020/10/maxresdefault-4-1.jpg" class="card-img-top"
+            alt="Miles Davis Kind of blue">
+          <div class="card-body">
+            <h5 class="card-title">Daft Punk Random Access Memories</h5>
+            <p class="card-text">Simplemente los franceses mas famosos de los últimos años, no podian no estar aqui</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.ytimg.com/vi/3X4kaDIyInk/maxresdefault.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Zaas Paris</h5>
+            <p class="card-text">Arrancando con su tema Paris sera toujour Paris este disco lleno de energia y letras en
+              frances te acompañara en todas tu caminatas</p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
   <!-- Footer -->
-  <footer class="backgroundFooter1 letrasBlancas">
+  <footer class="backgroundFooter1 text-white">
 
     <!-- Section: Links  -->
     <section class="pt-4">
